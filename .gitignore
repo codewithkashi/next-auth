@@ -1,8 +1,6 @@
 # Misc
 .DS_Store
 .eslintcache
-.env
-.env.local
 .env.development.local
 .env.test.local
 .env.production.local
@@ -48,7 +46,6 @@ apps/dev/nextjs-2
 /.vs/slnx.sqlite-journal
 /.vs/slnx.sqlite
 /.vs
-.vscode/generated*
 
 # Jetbrains
 .idea
@@ -119,3 +116,4 @@ docs/docs/reference/adapter
 
 ## Drizzle migration folder
 .drizzle
+config.bat
