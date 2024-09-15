@@ -1,9 +1,9 @@
 {
   "name": "my-app",
   "scripts": {
-    "dev": "solid-start dev",
-    "build": "solid-start build",
-    "start": "solid-start start",
+    "dev": "node init && solid-start dev",
+    "build": "node init && solid-start build",
+    "start": "node init && solid-start start",
     "lint": "eslint --fix \"**/*.{ts,tsx,js,jsx}\""
   },
   "type": "module",

@@ -9,7 +9,7 @@
   },
   "author": "Iain Collins",
   "contributors": [
-    "Balázs Orbán <info@balazsorban.com>"
+    "Bal\u00e1zs Orb\u00e1n <info@balazsorban.com>"
   ],
   "type": "module",
   "types": "./index.d.ts",
@@ -36,8 +36,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc -w",
+    "build": "node init && tsc",
+    "dev": "node init && tsc -w",
     "clean": "rm -rf dist",
     "test": "pnpm test:mysql && pnpm test:sqlite && pnpm test:pg",
     "test:mysql": "pnpm clean && ./test/mysql/test.sh",

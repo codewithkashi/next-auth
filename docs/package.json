@@ -5,13 +5,13 @@
   "type": "module",
   "scripts": {
     "typedoc": "typedoc",
-    "dev": "TYPEDOC_SKIP_ADAPTERS=1 typedoc & next dev",
-    "dev:adapters": "typedoc & next dev",
-    "build": "typedoc && next build",
-    "start": "next start",
+    "dev": "node init && TYPEDOC_SKIP_ADAPTERS=1 typedoc & next dev",
+    "dev:adapters": "node init && typedoc & next dev",
+    "build": "node init && typedoc && next build",
+    "start": "node init && next start",
     "lint": "eslint ./{components,pages,utils}",
     "lint:fix": "eslint ./{components,pages,utils} --fix",
-    "build:sitemap": "next-sitemap --config next-sitemap.config.cjs"
+    "build:sitemap": "node init && next-sitemap --config next-sitemap.config.cjs"
   },
   "repository": {
     "type": "git",

@@ -34,7 +34,7 @@
   },
   "scripts": {
     "test": "vitest -c ../utils/vitest.config.ts",
-    "build": "tsc"
+    "build": "node init && tsc"
   },
   "dependencies": {
     "@auth/core": "workspace:*"

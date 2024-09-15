@@ -34,8 +34,8 @@
   },
   "scripts": {
     "test": "./test/test.sh",
-    "dev": "tsc -w",
-    "build": "tsc"
+    "dev": "node init && tsc -w",
+    "build": "node init && tsc"
   },
   "dependencies": {
     "@auth/core": "workspace:*"

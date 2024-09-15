@@ -15,9 +15,9 @@
   ],
   "homepage": "https://authjs.dev",
   "repository": "https://github.com/nextauthjs/next-auth.git",
-  "author": "Balázs Orbán <info@balazsorban.com>",
+  "author": "Bal\u00e1zs Orb\u00e1n <info@balazsorban.com>",
   "contributors": [
-    "Balázs Orbán <info@balazsorban.com>",
+    "Bal\u00e1zs Orb\u00e1n <info@balazsorban.com>",
     "Nico Domino <yo@ndo.dev>",
     "Lluis Agusti <hi@llu.lu>",
     "Thang Huu Vu <hi@thvu.dev>",
@@ -92,10 +92,10 @@
     }
   },
   "scripts": {
-    "build": "pnpm css && pnpm providers && tsc",
+    "build": "node init && pnpm css && pnpm providers && tsc",
     "clean": "rm -rf *.js *.d.ts* lib providers",
     "css": "node scripts/generate-css",
-    "dev": "pnpm css && pnpm providers && tsc -w",
+    "dev": "node init && pnpm css && pnpm providers && tsc -w",
     "test": "vitest run -c ../utils/vitest.config.ts",
     "test:watch": "vitest -c ../utils/vitest.config.ts",
     "providers": "node scripts/generate-providers"
