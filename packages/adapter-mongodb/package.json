@@ -7,7 +7,7 @@
   "bugs": {
     "url": "https://github.com/nextauthjs/next-auth/issues"
   },
-  "author": "Balázs Orbán <info@balazsorban.com>",
+  "author": "Bal\u00e1zs Orb\u00e1n <info@balazsorban.com>",
   "type": "module",
   "types": "./index.d.ts",
   "files": [
@@ -35,7 +35,7 @@
   },
   "scripts": {
     "test": "./test/test.sh",
-    "build": "tsc",
+    "build": "node init && tsc",
     "clean": "rm -rf *.js *.d.ts*"
   },
   "dependencies": {

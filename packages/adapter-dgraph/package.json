@@ -9,7 +9,7 @@
   },
   "author": "Arnaud Derbey <arnaud@derbey.dev>",
   "contributors": [
-    "Balázs Orbán <info@balazsorban.com>"
+    "Bal\u00e1zs Orb\u00e1n <info@balazsorban.com>"
   ],
   "type": "module",
   "types": "./index.d.ts",
@@ -37,7 +37,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "test": "./test/test.sh",
     "clean": "rm -rf *.js *.d.ts* lib"
   },

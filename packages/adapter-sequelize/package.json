@@ -34,7 +34,7 @@
   },
   "scripts": {
     "test": "vitest -c ../utils/vitest.config.ts",
-    "build": "tsc",
+    "build": "node init && tsc",
     "clean": "rm -rf *.js *.d.ts*"
   },
   "dependencies": {

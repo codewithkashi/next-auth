@@ -27,7 +27,7 @@
     "access": "public"
   },
   "scripts": {
-    "build": "pnpm clean && tsc",
+    "build": "node init && pnpm clean && tsc",
     "clean": "rm -rf index.*",
     "test": "vitest run -c ../utils/vitest.config.ts"
   },

@@ -9,7 +9,7 @@
   },
   "author": "William Luke",
   "contributors": [
-    "Balázs Orbán <info@balazsorban.com>"
+    "Bal\u00e1zs Orb\u00e1n <info@balazsorban.com>"
   ],
   "type": "module",
   "types": "./index.d.ts",
@@ -45,8 +45,8 @@
     "test:mongodb": "./test/mongodb.test.sh",
     "test": "pnpm test:default && pnpm test:custom",
     "test:og": "pnpm test:default && pnpm test:custom && pnpm test:mongodb",
-    "build": "prisma generate && tsc",
-    "dev": "prisma generate && tsc -w",
+    "build": "node init && prisma generate && tsc",
+    "dev": "node init && prisma generate && tsc -w",
     "studio": "prisma studio"
   },
   "dependencies": {

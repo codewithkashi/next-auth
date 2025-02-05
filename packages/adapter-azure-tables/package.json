@@ -38,7 +38,7 @@
   },
   "scripts": {
     "test": "./test/test.sh",
-    "build": "tsc",
+    "build": "node init && tsc",
     "clean": "rm -rf *.js *.d.ts*"
   },
   "dependencies": {
