@@ -9,7 +9,7 @@
   },
   "author": "Jonas Strassel <info@jonas-strassel.de>",
   "contributors": [
-    "Balázs Orbán <info@balazsorban.com>"
+    "Bal\u00e1zs Orb\u00e1n <info@balazsorban.com>"
   ],
   "type": "module",
   "types": "./index.d.ts",
@@ -39,7 +39,7 @@
   },
   "scripts": {
     "test": "vitest -c ../utils/vitest.config.ts",
-    "build": "tsc",
+    "build": "node init && tsc",
     "clean": "rm -rf *.js *.d.ts* lib"
   },
   "peerDependencies": {
