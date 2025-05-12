@@ -22,11 +22,11 @@
     "test:custom": "CUSTOM_MODEL=1 vitest -c ../utils/vitest.config.ts",
     "test": "pnpm test:default && pnpm test:custom",
     "clean": "rm -rf index.*",
-    "build": "pnpm clean && tsc"
+    "build": "node init && pnpm clean && tsc"
   },
   "author": "Pol Marnette",
   "contributors": [
-    "Balázs Orbán <info@balazsorban.com>"
+    "Bal\u00e1zs Orb\u00e1n <info@balazsorban.com>"
   ],
   "license": "ISC",
   "type": "module",

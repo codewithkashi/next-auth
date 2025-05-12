@@ -26,7 +26,7 @@
     }
   },
   "scripts": {
-    "build": "pnpm clean && pnpm providers && tsc",
+    "build": "node init && pnpm clean && pnpm providers && tsc",
     "clean": "rm -rf lib index.* src/lib/providers",
     "test": "vitest run",
     "providers": "node ../utils/scripts/providers"

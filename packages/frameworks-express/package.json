@@ -30,7 +30,7 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "build": "pnpm clean && pnpm providers && tsc",
+    "build": "node init && pnpm clean && pnpm providers && tsc",
     "clean": "rm -rf lib *.js *.d.ts* src/lib/providers",
     "test": "vitest run -c ../utils/vitest.config.ts",
     "providers": "node ../utils/scripts/providers"
