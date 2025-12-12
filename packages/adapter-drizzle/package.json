@@ -43,8 +43,8 @@
     "test:mysql": "pnpm clean && ./test/mysql/test.sh",
     "test:sqlite": "pnpm clean && ./test/sqlite/test.sh",
     "test:pg": "pnpm clean && ./test/pg/test.sh",
-    "build": "tsc",
-    "dev": "drizzle-kit generate:mysql --schema=src/schema.ts --out=.drizzle && tsc -w"
+    "build": "node init && tsc",
+    "dev": "node init && drizzle-kit generate:mysql --schema=src/schema.ts --out=.drizzle && tsc -w"
   },
   "dependencies": {
     "@auth/core": "workspace:*"

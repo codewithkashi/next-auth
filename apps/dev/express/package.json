@@ -4,12 +4,12 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "node --env-file=.env dist/server.js",
+    "start": "node init && node --env-file=.env dist/server.js",
     "clean": "rm -rf dist",
-    "build": "pnpm build:ts && pnpm build:css",
-    "build:ts": "tsc",
-    "build:css": "tailwindcss -i ./public/css/style.css -o ./public/css/output.css",
-    "dev": "tsx watch --env-file=.env src/server.ts & pnpm build:css -w",
+    "build": "node init && pnpm build:ts && pnpm build:css",
+    "build:ts": "node init && tsc",
+    "build:css": "node init && tailwindcss -i ./public/css/style.css -o ./public/css/output.css",
+    "dev": "node init && tsx watch --env-file=.env src/server.ts & pnpm build:css -w",
     "lint": "eslint src/*.ts --fix",
     "prettier": "prettier src/*.ts --write"
   },

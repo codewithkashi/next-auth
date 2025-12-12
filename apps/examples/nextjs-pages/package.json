@@ -8,13 +8,13 @@
   },
   "homepage": "https://next-auth-pages-example.vercel.app",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "dev": "node init && next",
+    "build": "node init && next build",
+    "start": "node init && next start"
   },
   "author": "Iain Collins <me@iaincollins.com>",
   "contributors": [
-    "Balázs Orbán <info@balazsorban.com>",
+    "Bal\u00e1zs Orb\u00e1n <info@balazsorban.com>",
     "Nico Domino <yo@ndo.dev>",
     "Lluis Agusti <hi@llu.lu>",
     "Thang Huu Vu <hi@thvu.dev>"
@@ -28,7 +28,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "lucide-react": "^0.274.0",
-    "next": "latest",
+    "next": "15.5.8",
     "next-auth": "beta",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
