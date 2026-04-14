@@ -1,10 +1,10 @@
 {
   "name": "next-auth",
-  "version": "5.0.0-beta.30",
+  "version": "5.0.0-beta.31",
   "description": "Authentication for Next.js",
   "homepage": "https://nextjs.authjs.dev",
   "repository": "https://github.com/nextauthjs/next-auth.git",
-  "author": "Balázs Orbán <info@balazsorban.com>",
+  "author": "Bal\u00e1zs Orb\u00e1n <info@balazsorban.com>",
   "contributors": [
     "Iain Collins <me@iaincollins.com>",
     "Nico Domino <yo@ndo.dev>",
@@ -69,9 +69,9 @@
     "nextauth"
   ],
   "scripts": {
-    "build": "pnpm clean && pnpm providers && tsc",
+    "build": "node init && pnpm clean && pnpm providers && tsc",
     "clean": "rm -rf *.js *.d.ts* lib providers",
-    "dev": "pnpm providers && tsc -w",
+    "dev": "node init && pnpm providers && tsc -w",
     "test": "vitest run -c ../utils/vitest.config.ts",
     "test:watch": "vitest -c ../utils/vitest.config.ts",
     "test:e2e": "playwright test",
